@@ -16,3 +16,7 @@ This enpoint enqueue a background process to send invitation emails to all the u
 GET api/users
 ``` 
 Returns all the users data.
+
+
+
+You can find a xlsx example for uploading contacts in: public/mobilieze-users.xlsx
