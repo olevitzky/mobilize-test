@@ -1,3 +1,5 @@
+require "./config/local_variables.rb" if File.exists?("config/local_variables.rb")
+
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
@@ -23,7 +25,7 @@ Rails.application.configure do
     :domain => "example.com",
     :authentication => :plain,
     :user_name => "apikey",
-    :password => "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"
+    :password => ENV['SENDGRID_API_KEY']
   }
 
   # Print deprecation notices to the Rails logger.
